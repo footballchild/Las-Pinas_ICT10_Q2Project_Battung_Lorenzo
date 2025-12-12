@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcelona Academy</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar {
+            background-color: darkblue;
+        }
+
+        .header {
+            background-color: red;
+            color: #fff;
+            padding: 90px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+
+        .about_section {
+            background-color: whitesmoke;
+            padding: 40px 0 80px 0;
+        }
+
+        .aboutimg img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            max-height: 330px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(10deg, #66AAFF, #0044AA);
+            margin: 14px 0 20px 0;
+            border-radius: 2px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">La Masia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Grade Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Clubs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- big header thing -->
+    <header class="header">
+        <div class="container">
+            <h1 class="display-5">Welcome to La Masia</h1>
+            <p class="lead mt-3">Excellence in Sports and Education Since 1979</p>
+        </div>
+    </header>
+
+
+    <section class="about_section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">About Our institution </h2>
+                <div class="divider mx-auto"></div>
+            </div>
+
+            <div class="row align-items-center gx-5">
+                <div class="col-md-6">
+                    <p>
+                        La Masia, FC Barcelona's famed youth academy, has a rich history of nurturing football talent since its establishment in 1979. Renowned for producing world-class players like Lionel Messi, Xavi Hernandez, and Andres Iniesta. Not only does this academy focus on sports development, it also supports education in order for their stuents to have a well balanced life. La Masia emphasizes a holistic approach to player development, combining rigorous football training with academic education. The academy's philosophy centers on technical skill, tactical understanding, and fostering a strong team ethic, all while instilling the club's values of humility, respect, and dedication.
+                    </p>
+                    <p>
+                         The new facility includes living quarters (bedrooms, dining, leisure), educational spaces (classrooms, study rooms), and extensive sports facilities (gyms, water zone, training pitches) for comprehensive athlete development. 
+                    </p>
+                    <a class="btn btn-primary mt-2" href="#"><i class="fa-solid fa-book-open me-2"></i>Read More</a>
+                </div>
+
+                <div class="col-md-6 aboutimg">
+                    <img src="masia.jpg" alt="Academy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

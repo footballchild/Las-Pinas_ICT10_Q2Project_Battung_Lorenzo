@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barcelona Academy</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar {
+            background-color: darkblue;
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+
+        .main-content h1 {
+            color: #6a0000; 
+            font-weight: normal;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .divider {
+            border: none;
+            height: 1px;
+            background-color: #900000; 
+            margin: 0 auto 30px;
+            width: 50%;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .select-label {
+            color: #6a0000;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .club-select {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border: 1px solid #900000;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        /* Button Style (kept but will be removed for better flow) */
+        .show-info-button {
+            background-color: #900000; 
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .show-info-button:hover {
+            background-color: #6a0000;
+        }
+
+        .output-box {
+            background-color: #f7e6e6; 
+            border: 2px solid #900000; 
+            border-left: 5px solid #900000; 
+            padding: 25px;
+            text-align: left;
+            white-space: pre-wrap; 
+            line-height: 1.6;
+            color: #6a0000;
+        }
+
+        .club-details {
+            font-family: monospace; 
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body> 
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">La Masia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calculator.html">Grade Calculator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="club.html">Clubs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-content">
+        <h1>School Club Information</h1>
+        <hr class="divider">
+
+        <div class="form-section">
+            <p class="select-label">Select a club:</p>
+            
+            <select class="club-select" id="clubSelect" py-change="update_club_info">
+                <option value="Robotics Club" selected>Football Varsity</option>
+            </select>
+
+            </div>
+
+        <div class="output-box">
+            <pre class="club-details" id="clubDetailsOutput">
+Football Varsity
+Play, compete, and have fun against others in football.
+Meeting Time: Monay, Wednesay, Friday, 5-7 AM and 6-8 PM (saturday and sunday reserved for game days)
+Location: Camp Nou
+Coach: Lionel Messi
+Number of Members: 30-40 players
+Category: Sports</pre>
+        </div>
+    </div>
+
+
+</body>
+</html>
